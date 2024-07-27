@@ -1,1 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rosybrown;
+    font-family: cursive;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: smaller;
+    font-family: cursive;
+}
+
+h3 {
+    font-family: cursive;
+    text-transform: capitalize;
+    font-size: small;
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    background-color: bisque;
+}
+
+.box {
+    padding: 10px;
+    margin: 20px;
+    background-color: lavender;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.box {
+    height: 150px;
+    flex: 1 1 30%; 
+    max-width: 30%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .box {
+        flex: 1 1 45%; 
+        max-width: 45%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .box {
+        flex: 1 1 90%; 
+        max-width: 90%;
+    }
+}
 
